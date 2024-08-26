@@ -1,4 +1,3 @@
-// Função para alternar entre dark mode e modo claro
 function toggleMode() {
     document.body.classList.toggle('dark-mode');
     const modeIcon = document.querySelector('.mode-toggle');
@@ -12,7 +11,6 @@ function toggleMode() {
     }
 }
 
-// Expõe a função ao escopo global
 window.toggleMode = toggleMode;
 
 export function initializeTheme() {
@@ -26,6 +24,3 @@ export function initializeTheme() {
         modeIcon.src = "https://img.icons8.com/ios-filled/50/ffffff/bright-moon.png";
     }
 }
-
-// Chama a função ao carregar a página
-// initializeTheme();
