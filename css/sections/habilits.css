@@ -1,0 +1,67 @@
+.skills-container,
+.soft-skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    justify-content: center;
+}
+
+.skill-item,
+.soft-skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-item{
+    width: 75px;
+}
+.soft-skill-item{
+    width: 90px;
+}
+
+.skill-icon {
+    color: #9b59b6 ;
+}
+.soft-skill-icon  {
+    color: #2ecc71;
+}
+
+.skill-icon,
+.soft-skill-icon  {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.skill-name,
+.soft-skill-name {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+}
+
+/*------SOFT SKILLS-------------*/
+
+#soft-skills-heading {
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.soft-skill-icon {
+    color: #2ecc71;
+}
+
+.skills-note {
+    font-size: 14px;
+    color: #666;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.skill-description {
+    font-size: 10px; 
+    font-style: italic;
+    margin-top: 0; 
+    color: #9b59b6;
+    text-align: center;
+    font-weight: bold;
+}
