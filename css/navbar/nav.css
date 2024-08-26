@@ -1,0 +1,189 @@
+/* Navbar geral */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001f3f;
+    padding: 10px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 55px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav-links a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #004250;
+}
+
+/* DROPDOWM - LENGUAGE */
+.dropdown {
+    position: relative;
+    margin-right: 20px;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    outline: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #f8f9fa;
+    border: 2px solid #001f3f;
+    border-radius: 0.25rem;
+    z-index: 1000;
+    min-width: 160px;
+}
+
+.dropdown-menu .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    color: #212529;
+    text-decoration: none;
+    border: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #e9ecef;
+}
+
+.dropdown-menu .dropdown-item img {
+    width: 20px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+/* Exibir o dropdown ao clicar */
+.dropdown-toggle:focus + .dropdown-menu,
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Ícone de tradução */
+.fa-solid {
+    width: 35px;
+    height: 30px;
+    font-size: 40px;
+    color: #f8f9fa;
+}
+
+.mode-toggle {
+    position: relative;
+    right: 20px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.2s;
+    width: 40px; /* Ajuste o tamanho conforme necessário */
+    height: 40px; /* Ajuste o tamanho conforme necessário */
+}
+
+.mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+.navbar-extras {
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    margin-top: 10px;
+    
+}
+
+/* Estilos para telas menores */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger span {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 860px) {
+    .nav-links {
+        display: none;
+        position: fixed; /* Altera para fixed */
+        top: 80px;       /* Ajuste a posição top se necessário */
+        right: 0;
+        background-color: #001f3f;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        z-index: 1001;  /* Certifique-se de que o menu fique sobre outros elementos */
+    }
+
+    .nav-links a {
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .navbar-extras {
+        display: flex;
+        position: fixed; /* Mantém os ícones visíveis no topo */
+        top: 0;
+        right: 0;
+        background-color: #001f3f; /* O mesmo fundo da navbar para uma aparência consistente */
+        padding: 10px;
+        align-items: center;
+        z-index: 1001; /* Garante que os ícones estejam sobre o menu */
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    nav.active .nav-links {
+        display: flex;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 8px;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -8px;
+    }
+}
