@@ -56,15 +56,27 @@ export function renderProjects() {
     let projectCards = [];
 
     projects.forEach((project) => {
+        let links = '';
+
+        if (project.links.github) {
+            links += `<a href="${project.links.github}" target="_blank"><i class="fab fa-github"></i></a>`;
+        }
+        if (project.links.google) {
+            links += `<a href="${project.links.google}" target="_blank"><i class="fab fa-google"></i></a>`;
+        }
+        if (project.links.linkedin) {
+            links += `<a href="${project.links.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>`;
+        }
+        if (project.links.deploy) {
+            links += `<a href="${project.links.deploy}" target="_blank"><i class="fas fa-globe"></i></a>`;
+        }
+
         projectCards.push(`
             <div class="card">
                 <img src="${project.image}" alt="${project.title}">
                 <div class="card-content">
                     <div class="card-links">
-                        <a href="${project.links.github}" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="${project.links.google}" target="_blank"><i class="fab fa-google"></i></a>
-                        <a href="${project.links.linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="${project.links.deploy}" target="_blank"><i class="fas fa-globe"></i></a>
+                        ${links}
                     </div>
                     <h3>${project.title}</h3>
                     <p>${project.description}</p>
