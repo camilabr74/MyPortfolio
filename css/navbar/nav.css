@@ -34,7 +34,7 @@ nav {
     background-color: #004250;
 }
 
-/* DROPDOWM - LENGUAGE */
+/* DROPDOWM - LANGUAGE */
 .dropdown {
     position: relative;
     margin-right: 20px;
@@ -99,8 +99,8 @@ nav {
     cursor: pointer;
     margin-left: 20px;
     transition: transform 0.2s;
-    width: 40px; /* Ajuste o tamanho conforme necessário */
-    height: 40px; /* Ajuste o tamanho conforme necessário */
+    width: 40px;
+    height: 40px; 
 }
 
 .mode-toggle:hover {
@@ -109,7 +109,7 @@ nav {
 
 .navbar-extras {
     display: flex;
-    align-items: center; /* Alinha os itens no centro verticalmente */
+    align-items: center;
     margin-top: 10px;
     
 }
@@ -130,19 +130,18 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Estilos para telas menores */
 @media (max-width: 860px) {
     .nav-links {
         display: none;
-        position: fixed; /* Altera para fixed */
-        top: 80px;       /* Ajuste a posição top se necessário */
+        position: fixed; 
+        top: 80px;
         right: 0;
         background-color: #001f3f;
         width: 100%;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        z-index: 1001;  /* Certifique-se de que o menu fique sobre outros elementos */
+        z-index: 1001; 
     }
 
     .nav-links a {
@@ -154,13 +153,13 @@ nav {
 
     .navbar-extras {
         display: flex;
-        position: fixed; /* Mantém os ícones visíveis no topo */
+        position: fixed; 
         top: 0;
         right: 0;
-        background-color: #001f3f; /* O mesmo fundo da navbar para uma aparência consistente */
+        background-color: #001f3f;
         padding: 10px;
         align-items: center;
-        z-index: 1001; /* Garante que os ícones estejam sobre o menu */
+        z-index: 1001;
     }
 
     .hamburger {
