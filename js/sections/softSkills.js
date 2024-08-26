@@ -1,4 +1,3 @@
-// softSkills.js
 export const softSkills = [
     { icon: "fas fa-sync-alt", name: "Adaptabilidade" },
     { icon: "fas fa-comments", name: "Boa comunicação" },
