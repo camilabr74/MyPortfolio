@@ -145,9 +145,9 @@ const academic = [
     },
     {
         course: {
-            'pt': "Técnico em Administração",
-            'en': "Technical Course in Administration",
-            'es': "Técnico en Administración"
+            'pt': "Técnico em Administração - Escola FORTEC",
+            'en': "Technical Course in Administration - Escola FORTEC",
+            'es': "Técnico en Administración - Escola FORTEC"
         },
         year: {
             'pt': "janeiro 2015 - dezembro 2017",
@@ -228,6 +228,199 @@ const translations = {
     }
 };
 
+const experiences = [
+    {
+        title: {
+            'pt': "Trainee Desenvolvedora Full-Stack",
+            'en': "Full-Stack Developer Trainee",
+            'es': "Desarrolladora Full-Stack en Prácticas"
+        },
+        company: {
+            'pt': "Grupo FCamara",
+            'en': "FCamara Group",
+            'es': "Grupo FCamara"
+        },
+        date: {
+            'pt': "abril 2024 - momento",
+            'en': "April 2024 - Present",
+            'es': "abril 2024 - presente"
+        },
+        year: {
+            'pt': "2024",
+            'en': "2024",
+            'es': "2024"
+        },
+        description: {
+            'pt': "Programa de Formação: Python, Estatística, Power BI, PowerApps&Automate, REST API com Flask, watsonx Assistant.",
+            'en': "Training Program: Python, Statistics, Power BI, PowerApps & Automate, REST API with Flask, watsonx Assistant.",
+            'es': "Programa de Formación: Python, Estadística, Power BI, PowerApps & Automate, REST API con Flask, watsonx Assistant."
+        }
+    },
+    {
+        title: {
+            'pt': "Auditora Interna - Qualidade",
+            'en': "Internal Quality Auditor",
+            'es': "Auditora Interna de Calidad"
+        },
+        company: {
+            'pt': "Escola e Faculdade FORTEC",
+            'en': "FORTEC School and College",
+            'es': "Escuela y Facultad FORTEC"
+        },
+        date: {
+            'pt': "agosto 2022 - novembro 2023",
+            'en': "August 2022 - November 2023",
+            'es': "agosto - noviembre 2023"
+        },
+        year: {
+            'pt': "2022",
+            'en': "2022",
+            'es': "2022"
+        },
+        description: {
+            'pt': "Setor Qualidade: Auditorias para avaliação e análise de processos internos para garantir conformidade e eficiência operacional (setores administrativos, gerência, infraestrutura e operacional); Gestão de Não Conformidades; Aplicação e tabulação de pesquisas de qualidade.",
+            'en': "Quality Department: Audits for evaluating and analyzing internal processes to ensure compliance and operational efficiency (administrative, management, infrastructure, and operational sectors); Nonconformity Management; Application and tabulation of quality surveys.",
+            'es': "Departamento de Calidad: Auditorías para la evaluación y análisis de procesos internos para garantizar el cumplimiento y la eficiencia operativa (sectores administrativos, de gestión, de infraestructura y operativos); Gestión de No Conformidades; Aplicación y tabulación de encuestas de calidad."
+        }
+    },
+    {
+        title: {
+            'pt': "Recepcionista - Pedagógico",
+            'en': "Receptionist - Pedagogical",
+            'es': "Recepcionista - Pedagógico"
+        },
+        company: {
+            'pt': "UPPERSIDE Idiomas",
+            'en': "UPPERSIDE Languages",
+            'es': "UPPERSIDE Idiomas"
+        },
+        date: {
+            'pt': "agosto 2021 - agosto 2022",
+            'en': "August 2021 - August 2022",
+            'es': "agosto 2021 - agosto 2022"
+        },
+        year: {
+            'pt': "2021",
+            'en': "2021",
+            'es': "2021"
+        },
+        description: {
+            'pt': "Auxílio coordenação pedagógica: Apoio à coordenação pedagógica na administração de aulas e alunos, incluindo agendamento de aulas, acompanhamento de faltas e comunicação com pais e alunos sobre questões e atualizações acadêmicas.",
+            'en': "Pedagogical Coordination Assistance: Support to the pedagogical coordination in the administration of classes and students, including class scheduling, attendance monitoring, and communication with parents and students regarding academic issues and updates.",
+            'es': "Asistencia en Coordinación Pedagógica: Apoyo a la coordinación pedagógica en la administración de clases y alumnos, incluyendo la programación de clases, el seguimiento de la asistencia y la comunicación con padres y alumnos sobre cuestiones y actualizaciones académicas."
+        }
+    },
+    {
+        title: {
+            'pt': "Auxiliar Administrativo",
+            'en': "Administrative Assistant",
+            'es': "Asistente Administrativo"
+        },
+        company: {
+            'pt': "LUDMAR Usinagem e Caldeiraria",
+            'en': "LUDMAR Machining and Boilerworks",
+            'es': "LUDMAR Mecanizado y Calderería"
+        },
+        date: {
+            'pt': "setembro 2018 - agosto 2019",
+            'en': "September 2018 - August 2019",
+            'es': "septiembre 2018 - agosto 2019"
+        },
+        year: {
+            'pt': "2018",
+            'en': "2018",
+            'es': "2018"
+        },
+        description: {
+            'pt': "Operacional: Orçamentos de serviços; relatórios operacionais; emissão de notas fiscais; fluxo de caixa.",
+            'en': "Service quotations preparation and management; generation of operational reports for performance tracking; issuance of invoices for services rendered; cash flow.",
+            'es': "Operacional: Cotizaciones de servicios; informes operativos; emisión de facturas; flujo de caja."
+        }
+    },
+    {
+        title: {
+            'pt': "Auxiliar de Escritório",
+            'en': "Office Assistant",
+            'es': "Asistente de Oficina"
+        },
+        company: {
+            'pt': "Escola e Faculdade FORTEC",
+            'en': "FORTEC School and College",
+            'es': "Escuela y Facultad FORTEC"
+        },
+        date: {
+            'pt': "julho - agosto 2018",
+            'en': "July - August 2018",
+            'es': "julio - agosto 2018"
+        },
+        year: {
+            'pt': "2018",
+            'en': "2018",
+            'es': "2018"
+        },
+        description: {
+            'pt': "Setor da Qualidade: Controle de planejamento e cronograma de atividades; assistência pedagógica e administrativa em projeto social SEMEAR; tabulação de dados para indicadores de qualidade de desempenho interno.",
+            'en': "Quality Department: Planning and scheduling control; pedagogical and administrative assistance in the SEMEAR social project; data tabulation for internal performance quality indicators.",
+            'es': "Departamento de Calidad: Control de planificación y programación; asistencia pedagógica y administrativa en el proyecto social SEMEAR; tabulación de datos para indicadores de calidad de desempeño interno."
+        }
+    },
+    {
+        title: {
+            'pt': "Estagiária Administração de Empresas",
+            'en': "Business Administration Intern",
+            'es': "Practicante en Administración de Empresas"
+        },
+        company: {
+            'pt': "Escola e Faculdade FORTEC",
+            'en': "FORTEC School and College",
+            'es': "Escuela y Facultad FORTEC"
+        },
+        date: {
+            'pt': "dezembro 2017 - julho 2018",
+            'en': "December 2017 - July 2018",
+            'es': "diciembre 2017 - julio 2018"
+        },
+        year: {
+            'pt': "2017",
+            'en': "2017",
+            'es': "2017"
+        },
+        description: {
+            'pt': "Setor da Qualidade: Elaboração de planilhas e relatórios; tabulação de dados para indicadores de qualidade de desempenho; aplicação e análise de pesquisas de qualidade interna e externa; assistência pedagógica no projeto social SEMEAR; gerenciamento de cronogramas de atividades e projetos.",
+            'en': "Quality Department: Preparation of spreadsheets and reports; data tabulation for performance quality indicators; application and analysis of internal and external quality surveys; pedagogical assistance in the SEMEAR social project; management of activity and project schedules.",
+            'es': "Departamento de Calidad: Elaboración de hojas de cálculo e informes; tabulación de datos para indicadores de calidad de desempeño; aplicación y análisis de encuestas de calidad internas y externas; asistencia pedagógica en el proyecto social SEMEAR; gestión de cronogramas de actividades y proyectos."
+        }
+    },
+    {
+        title: {
+            'pt': "Estagiária Técnico em Administração",
+            'en': "Technical Administration Intern",
+            'es': "Practicante Técnico en Administración"
+        },
+        company: {
+            'pt': "Escola e Faculdade FORTEC",
+            'en': "FORTEC School and College",
+            'es': "Escuela y Facultad FORTEC"
+        },
+        date: {
+            'pt': "março 2016 - dezembro 2017",
+            'en': "March 2016 - December 2017",
+            'es': "marzo 2016 - diciembre 2017"
+        },
+        year: {
+            'pt': "2016",
+            'en': "2016",
+            'es': "2016"
+        },
+        description: {
+            'pt': "Setor da Qualidade: Preenchimento de planilhas; controle de documentos internos; atendimento telefônico; suporte na aplicação e tabulação de pesquisas de qualidade.",
+            'en': "Quality Department: Filling out spreadsheets; controlling internal documents; phone assistance; support in the application and tabulation of quality surveys.",
+            'es': "Departamento de Calidad: Llenado de hojas de cálculo; control de documentos internos; asistencia telefónica; apoyo en la aplicación y tabulación de encuestas de calidad."
+        }
+    }
+];
+
+
 function changeSkillsLanguage(lang){
      softSkills.forEach((item,index)=>{
          document.querySelector('#name-'+index).innerHTML=item.name[lang];
@@ -246,6 +439,19 @@ function changeAcademicLanguage(lang){
     })
 }
 
+function changeExperienceLanguage(lang) {
+    experiences.forEach((experience, index) => {
+        const descriptionText = experience.description[lang] || experience.description['pt'];
+        document.querySelector('#jobName-'+index).innerHTML = experience.title[lang] || experience.title['pt'];
+        document.querySelector('#date-'+index).innerHTML = `${experience.company[lang] || experience.company['pt']} | ${experience.date[lang] || experience.date['pt']}`;
+        document.querySelector('#descExperience-'+index).innerHTML = descriptionText;
+        document.querySelector('#yearExperience-'+index).innerHTML = experience.year[lang] || experience.year['pt'];
+    });
+}
+
+
+
+
 function changeLanguage(lang) {
     document.title = translations[lang]['title'];
 
@@ -262,9 +468,9 @@ function changeLanguage(lang) {
     changeCardLanguage(lang);
     changeSkillsLanguage(lang);
     changeAcademicLanguage(lang);
+    changeExperienceLanguage(lang);
 
 
-    // Atualiza a imagem da bandeira no botão dropdown
      const flagImage = document.querySelector('.dropdown-toggle .dropdown-icon');
      if (flagMap[lang]) {
         flagImage.src = flagMap[lang];
