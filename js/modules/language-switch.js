@@ -4,6 +4,120 @@ const flagMap = {
     'es': 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'
 };
 
+let projects = [
+    {
+        image: "https://via.placeholder.com/300x200",
+        title: {
+            'pt': "Hub de Indicadores Globais",
+            'en': "Global Indicators Hub",
+            'es': "Centro de Indicadores Globales"
+        },
+        description: {
+            'pt': "Aplicação web que consome a API do IBGE usando Flask para exibir indicadores por países. Os dados são tratados em JavaScript e renderizados dinamicamente em uma tabela. Utilizei Charts.js para gerar gráficos interativos dos indicadores.",
+            'en': "Web application that consumes the IBGE API using Flask to display indicators by country. Data is processed in JavaScript and dynamically rendered in a table. I used Charts.js to generate interactive charts for the indicators.",
+            'es': "Aplicación web que consume la API del IBGE usando Flask para mostrar indicadores por país. Los datos se procesan en JavaScript y se renderizan dinámicamente en una tabla. Utilicé Charts.js para generar gráficos interactivos de los indicadores."
+        },
+        links: {
+            github: "https://github.com/camilabr74/Flask-IBGE-Data-API"
+        },
+        tags: ["JavaScript", "Flask", "HTML/CSS", "Bootstrap"]
+    },
+    {
+        image: "./images/projectImages/enem2019.jpg",
+        title: {
+            'pt': "Análise de Dados com Python - ENEM 2019",
+            'en': "Data Analysis with Python - ENEM 2019",
+            'es': "Análisis de Datos con Python - ENEM 2019"
+        },
+        description: {
+            'pt': "Este projeto envolveu a análise estatística dos dados do ENEM 2019, utilizando Python para carregar, tratar e aplicar técnicas como medidas descritivas, distribuições e regressão linear, resultando em uma análise detalhada e significativa.",
+            'en': "This project involved statistical analysis of the 2019 ENEM data, using Python to load, process, and apply techniques such as descriptive measures, distributions, and linear regression, resulting in a detailed and meaningful analysis.",
+            'es': "Este proyecto involucró el análisis estadístico de los datos del ENEM 2019, utilizando Python para cargar, procesar y aplicar técnicas como medidas descriptivas, distribuciones y regresión lineal, resultando en un análisis detallado y significativo."
+        },
+        links: {
+            github: "https://github.com/camilabr74/Estatistica-Analise-Dados-Python",
+            google: "https://drive.google.com/file/d/1qNsYV6jvlGek_R9XzyLpTJVAu2YxJNqh/view?usp=sharing"
+        },
+        tags: ["Python", "Pandas", "Numpy", "Matplotlib", "Colab"]
+    },
+    {
+        image: "./images/projectImages/orange.JPG",
+        title: {
+            'pt': "Orange Portfólio",
+            'en': "Orange Portfolio",
+            'es': "Portafolio Orange"
+        },
+        description: {
+            'pt': "Orange Portfolio é uma aplicação desenvolvida pelo Squad 18 que permite usuários se cadastrarem, adicionarem projetos ao portfólio e explorarem trabalhos de outros membros da Comunidade Orange Juice.",
+            'en': "Orange Portfolio is an application developed by Squad 18 that allows users to register, add projects to their portfolio, and explore works from other members of the Orange Juice Community.",
+            'es': "Orange Portfolio es una aplicación desarrollada por el Squad 18 que permite a los usuarios registrarse, agregar proyectos a su portafolio y explorar trabajos de otros miembros de la Comunidad Orange Juice."
+        },
+        links: {
+            github: "https://github.com/camilabr74/orange",
+            youtube: "https://youtu.be/WJaenoGOvI8"
+            // linkedin: "https://www.linkedin.com/in/seu-perfil",
+            // deploy: "https://seu-deploy-link.com"
+        },
+        tags: ["React", "Vite", "MaterialUI", "Tailwind CSS", "Google OAuth"]
+    },
+    {
+        image: "./images/projectImages/meuPortfolio.JPG",
+        title: {
+            'pt': "Meu Portfólio",
+            'en': "My Portfolio",
+            'es': "Mi Portafolio"
+        },
+        description: {
+            'pt': "Este portfólio foi criado para apresentar meus projetos e habilidades de forma clara e organizada. Ele é totalmente responsivo, adaptando-se a diferentes dispositivos, e inclui um modo escuro para uma melhor experiência de visualização.",
+            'en': "This portfolio was created to showcase my projects and skills in a clear and organized way. It is fully responsive, adapting to different devices, and includes a dark mode for a better viewing experience.",
+            'es': "Este portafolio fue creado para presentar mis proyectos y habilidades de manera clara y organizada. Es totalmente responsivo, adaptándose a diferentes dispositivos, e incluye un modo oscuro para una mejor experiencia de visualización."
+        },
+        links: {
+            github: "https://github.com/seu-usuario/seu-repositorio",
+            google: "https://colab.research.google.com/drive/seu-colab-link"
+            // linkedin: "https://www.linkedin.com/in/seu-perfil",
+            // deploy: "https://seu-deploy-link.com"
+        },
+        tags: ["JavaScript", "HTML", "CSS"]
+    },
+    {
+        image: "./images/projectImages/pequenosPassos.JPG",
+        title: {
+            'pt': "Pequenos Passos - Registro diário educação infantil",
+            'en': "Little Steps - Daily Record for Early Childhood Education",
+            'es': "Pequeños Pasos - Registro Diario de Educación Infantil"
+        },
+        description: {
+            'pt': "Pequenos Passos é um software web para digitalizar o registro de observações na Educação Infantil, visando obter informações de desenvolvimento de cada criança. Seu objetivo é substituir registros manuais por uma solução digital eficiente e centralizada.",
+            'en': "Little Steps is a web software designed to digitize observation records in Early Childhood Education, aiming to gather development information for each child. Its goal is to replace manual records with an efficient and centralized digital solution.",
+            'es': "Pequeños Pasos es un software web diseñado para digitalizar el registro de observaciones en la Educación Infantil, con el objetivo de recopilar información de desarrollo para cada niño. Su objetivo es sustituir los registros manuales por una solución digital eficiente y centralizada."
+        },
+        links: {
+            figma: "https://www.figma.com/proto/bXzFyutCuvf3zuvJH9QRJO/Pequenos-Passos?node-id=1-2&t=LzQzYKpsMS2sPAIt-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+            youtube: "https://youtu.be/yFUmgHMjn_g"
+        },
+        tags: ["Figma", "AdobeColor", "HTML", "CSS", "Bootstrap"]
+    },
+    {
+        image: "./images/projectImages/petShop.JPG",
+        title: {
+            'pt': "Agenda PetShop",
+            'en': "PetShop Schedule",
+            'es': "Agenda PetShop"
+        },
+        description: {
+            'pt': "Protótipo desenvolvido utilizando Figma para agendamento de serviços de banho e tosa em PetShop.",
+            'en': "Prototype developed using Figma for scheduling grooming services in PetShop.",
+            'es': "Prototipo desarrollado utilizando Figma para agendar servicios de baño y corte en PetShop."
+        },
+        links: {
+            figma: "https://www.figma.com/proto/yCG4GvQgbnhLXmd4hCxY3V/petShop?node-id=34-414&t=i64KJ2lx7IofvPFH-0&scaling=scale-down&content-scaling=fixed&page-id=34%3A413&starting-point-node-id=34%3A414"
+        },
+        tags: ["Figma", "AdobeColor"]
+    }
+];
+
+
 const translations = {
     'pt': {
         'title': '</Camis>',
@@ -75,6 +189,13 @@ const translations = {
     }
 };
 
+function changeCardLanguage(lang){
+    projects.forEach((project,index)=>{
+        document.querySelector('#title-'+index).innerHTML=project.title[lang];
+        document.querySelector('#desc-'+index).innerHTML=project.description[lang];
+    })
+}
+
 function changeLanguage(lang) {
     document.title = translations[lang]['title'];
 
@@ -88,12 +209,13 @@ function changeLanguage(lang) {
     document.getElementById('projects-heading').textContent = translations[lang]['projects-heading'];
     document.getElementById('education-heading').textContent = translations[lang]['education-heading'];
     document.getElementById('experience-heading').textContent = translations[lang]['experience-heading'];
+    changeCardLanguage(lang)
 
 
     // Atualiza a imagem da bandeira no botão dropdown
-    // const flagImage = document.querySelector('.dropdown-toggle .dropdown-icon');
-    // if (flagMap[lang]) {
-    //     flagImage.src = flagMap[lang];
-    // }
+     const flagImage = document.querySelector('.dropdown-toggle .dropdown-icon');
+     if (flagMap[lang]) {
+        flagImage.src = flagMap[lang];
+    }
 }
 
