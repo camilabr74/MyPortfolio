@@ -14,11 +14,6 @@ export const softSkills = [
 export function renderSoftSkills() {
     const softSkillsList = document.querySelector(".soft-skills-container");
 
-    if (!softSkillsList) {
-        console.error("Elemento com a classe 'soft-skills-container' não foi encontrado.");
-        return;
-    }
-
     let softSkillsCards = [];
 
     softSkills.forEach((item) => {

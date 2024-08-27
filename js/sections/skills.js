@@ -2,7 +2,7 @@ export const skills = [
     { icon: "fab fa-bootstrap", name: "Bootstrap" },
     { icon: "fab fa-css3-alt", name: "CSS" },
     { icon: "fas fa-file-excel", name: "Excel" },
-    { icon: "fas fa-paint-brush", name: "Figma" },
+    { icon: "fa-brands fa-figma", name: "Figma" },
     { icon: "fas fa-flask", name: "Flask" },
     { icon: "fab fa-git-alt", name: "Git" },
     { icon: "fas fa-book", name: "Google Colab" },
