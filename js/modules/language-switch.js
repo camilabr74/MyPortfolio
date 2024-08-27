@@ -19,7 +19,7 @@ const softSkills = [
 
 const projects = [
     {
-        image: "https://via.placeholder.com/300x200",
+        image: "./images/projectImages/apiIBGE.png",
         title: {
             'pt': "Hub de Indicadores Globais",
             'en': "Global Indicators Hub",
@@ -81,13 +81,12 @@ const projects = [
             'es': "Mi Portafolio"
         },
         description: {
-            'pt': "Este portfólio foi criado para apresentar meus projetos e habilidades de forma clara e organizada. Ele é totalmente responsivo, adaptando-se a diferentes dispositivos, e inclui um modo escuro para uma melhor experiência de visualização.",
-            'en': "This portfolio was created to showcase my projects and skills in a clear and organized way. It is fully responsive, adapting to different devices, and includes a dark mode for a better viewing experience.",
-            'es': "Este portafolio fue creado para presentar mis proyectos y habilidades de manera clara y organizada. Es totalmente responsivo, adaptándose a diferentes dispositivos, e incluye un modo oscuro para una mejor experiencia de visualización."
+            'pt': "Este portfólio foi criado para apresentar meus projetos e habilidades de forma clara e organizada. Ele é responsivo, adaptando-se a diferentes dispositivos, inclui um modo escuro para uma melhor experiência de visualização e  também oferece suporte à tradução de idiomas.",
+            'en': "This portfolio was created to showcase my projects and skills in a clear and organized manner. It is responsive, adapting to different devices, includes a dark mode for a better viewing experience, and also supports language translation.",
+            'es': "Este portafolio fue creado para presentar mis proyectos y habilidades de manera clara y organizada. Es responsivo, adaptándose a diferentes dispositivos, incluye un modo oscuro para una mejor experiencia visual y también ofrece soporte para la traducción de idiomas."
         },
         links: {
             github: "https://github.com/seu-usuario/seu-repositorio",
-            google: "https://colab.research.google.com/drive/seu-colab-link"
             // linkedin: "https://www.linkedin.com/in/seu-perfil",
             // deploy: "https://seu-deploy-link.com"
         },
@@ -448,9 +447,6 @@ function changeExperienceLanguage(lang) {
         document.querySelector('#yearExperience-'+index).innerHTML = experience.year[lang] || experience.year['pt'];
     });
 }
-
-
-
 
 function changeLanguage(lang) {
     document.title = translations[lang]['title'];
