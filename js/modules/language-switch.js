@@ -4,7 +4,20 @@ const flagMap = {
     'es': 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg'
 };
 
-let projects = [
+const softSkills = [
+    { icon: "fas fa-sync-alt", name: { 'pt': "Adaptabilidade", 'en': "Adaptability", 'es': "Adaptabilidad" } },
+    { icon: "fas fa-comments", name: { 'pt': "Boa comunicação", 'en': "Good Communication", 'es': "Buena comunicación" } },
+    { icon: "fas fa-globe", name: { 'pt': "Inglês - Nível B1", 'en': "English - Level B1", 'es': "Inglés - Nivel B1" } },
+    { icon: "fas fa-star", name: { 'pt': "Foco em qualidade", 'en': "Focus on Quality", 'es': "Enfoque en la calidad" } },
+    { icon: "fas fa-microphone-alt", name: { 'pt': "Gosto de fazer apresentações", 'en': "Enjoys Making Presentations", 'es': "Disfruta hacer presentaciones" } },
+    { icon: "fas fa-tasks", name: { 'pt': "Organizada", 'en': "Organized", 'es': "Organizada" } },
+    { icon: "fas fa-brain", name: { 'pt': "Pensamento Crítico", 'en': "Critical Thinking", 'es': "Pensamiento Crítico" } },
+    { icon: "fas fa-lightbulb", name: { 'pt': "Proativa", 'en': "Proactive", 'es': "Proactiva" } },
+    { icon: "fas fa-users", name: { 'pt': "Trabalho em equipe", 'en': "Teamwork", 'es': "Trabajo en equipo" } },
+    { icon: "fas fa-eye", name: { 'pt': "Visão Sistêmica", 'en': "Systemic Vision", 'es': "Visión Sistémica" } }
+];
+
+const projects = [
     {
         image: "https://via.placeholder.com/300x200",
         title: {
@@ -189,12 +202,18 @@ const translations = {
     }
 };
 
+function changeSkillsLanguage(lang){
+     softSkills.forEach((item,index)=>{
+         document.querySelector('#name-'+index).innerHTML=item.name[lang];
+     })
+}
 function changeCardLanguage(lang){
     projects.forEach((project,index)=>{
         document.querySelector('#title-'+index).innerHTML=project.title[lang];
         document.querySelector('#desc-'+index).innerHTML=project.description[lang];
     })
 }
+
 
 function changeLanguage(lang) {
     document.title = translations[lang]['title'];
@@ -209,7 +228,8 @@ function changeLanguage(lang) {
     document.getElementById('projects-heading').textContent = translations[lang]['projects-heading'];
     document.getElementById('education-heading').textContent = translations[lang]['education-heading'];
     document.getElementById('experience-heading').textContent = translations[lang]['experience-heading'];
-    changeCardLanguage(lang)
+    changeCardLanguage(lang);
+    changeSkillsLanguage(lang)
 
 
     // Atualiza a imagem da bandeira no botão dropdown
