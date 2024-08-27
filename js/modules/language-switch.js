@@ -86,7 +86,7 @@ const projects = [
             'es': "Este portafolio fue creado para presentar mis proyectos y habilidades de manera clara y organizada. Es responsivo, adaptándose a diferentes dispositivos, incluye un modo oscuro para una mejor experiencia visual y también ofrece soporte para la traducción de idiomas."
         },
         links: {
-            github: "https://github.com/seu-usuario/seu-repositorio",
+            github: "https://github.com/camilabr74/MyPortfolio",
             // linkedin: "https://www.linkedin.com/in/seu-perfil",
             // deploy: "https://seu-deploy-link.com"
         },
