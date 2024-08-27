@@ -130,6 +130,32 @@ const projects = [
     }
 ];
 
+const academic = [
+    {
+        course: {
+            'pt': "Bacharelado em Ciência de Dados - Univesp",
+            'en': "Bachelor's Degree in Data Science - Univesp",
+            'es': "Licenciatura en Ciencia de Datos - Univesp"
+        },
+        year: {
+            'pt': "agosto 2022 - agosto 2026",
+            'en': "August 2022 - August 2026",
+            'es': "agosto 2022 - agosto 2026"
+        }
+    },
+    {
+        course: {
+            'pt': "Técnico em Administração",
+            'en': "Technical Course in Administration",
+            'es': "Técnico en Administración"
+        },
+        year: {
+            'pt': "janeiro 2015 - dezembro 2017",
+            'en': "January 2015 - December 2017",
+            'es': "enero 2015 - diciembre 2017"
+        }
+    }
+];
 
 const translations = {
     'pt': {
@@ -213,7 +239,12 @@ function changeCardLanguage(lang){
         document.querySelector('#desc-'+index).innerHTML=project.description[lang];
     })
 }
-
+function changeAcademicLanguage(lang){
+    academic.forEach((course,index)=>{
+        document.querySelector('#course-'+index).innerHTML=course.course[lang];
+        document.querySelector('#year-'+index).innerHTML=course.year[lang];
+    })
+}
 
 function changeLanguage(lang) {
     document.title = translations[lang]['title'];
@@ -229,7 +260,8 @@ function changeLanguage(lang) {
     document.getElementById('education-heading').textContent = translations[lang]['education-heading'];
     document.getElementById('experience-heading').textContent = translations[lang]['experience-heading'];
     changeCardLanguage(lang);
-    changeSkillsLanguage(lang)
+    changeSkillsLanguage(lang);
+    changeAcademicLanguage(lang);
 
 
     // Atualiza a imagem da bandeira no botão dropdown
