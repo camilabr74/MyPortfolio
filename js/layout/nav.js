@@ -17,8 +17,7 @@ export function renderNav() {
             <div class="dropdown">
                 <button class="dropdown-toggle" type="button" id="dropdownMenuButton" aria-haspopup="true"
                     aria-expanded="false">
-                    <i class="fa-solid fa-language"></i>
-                </button>
+                    <img class="dropdown-icon" src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Bandeira">                </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#" onclick="changeLanguage('pt')">
                         <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"

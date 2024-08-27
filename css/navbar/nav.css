@@ -78,6 +78,9 @@ nav {
     height: 15px;
     margin-right: 8px;
 }
+.dropdown-icon{
+    width: 40px;
+}
 
 /* Exibir o dropdown ao clicar */
 .dropdown-toggle:focus + .dropdown-menu,
