@@ -33,7 +33,7 @@ const projects = [
         links: {
             github: "https://github.com/camilabr74/Flask-IBGE-Data-API"
         },
-        tags: ["JavaScript", "Flask", "HTML/CSS", "Bootstrap"]
+        tags: ["JavaScript", "Flask", "HTML/CSS", "Bootstrap", "ChartsJS"]
     },
     {
         image: "./images/projectImages/enem2019.jpg",
