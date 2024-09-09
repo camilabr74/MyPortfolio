@@ -31,7 +31,8 @@ const projects = [
             'es': "Aplicación web que consume la API del IBGE usando Flask para mostrar indicadores por país. Los datos se procesan en JavaScript y se renderizan dinámicamente en una tabla. Utilicé Charts.js para generar gráficos interactivos de los indicadores."
         },
         links: {
-            github: "https://github.com/camilabr74/Flask-IBGE-Data-API"
+            github: "https://github.com/camilabr74/Flask-IBGE-Data-API",
+            deploy: "https://apenascamis.pythonanywhere.com/"
         },
         tags: ["JavaScript", "Flask", "HTML/CSS", "Bootstrap", "ChartsJS"]
     },
